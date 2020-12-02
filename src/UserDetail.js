@@ -3,14 +3,14 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 const UserDetail = (props) => {
   const { id } = props.match.params;
-  const [user, setUser] = useState({});
+  const [userName, setName] = useState("");
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     axios
       .get(`https://jsonplaceholder.typicode.com/users/${id}`)
       .then((response) => {
-        const result = response.data;
-        setUser(result);
+        const result = response.data.name;
+        setName(result);
       })
       .catch((err) => {
         alert(err.message);
@@ -27,7 +27,7 @@ const UserDetail = (props) => {
   }, [id]);
   return (
     <div>
-      <h1>USER NAME:{user.name}</h1>
+      <h1>USER NAME:{userName}</h1>
       <h2>POSTS WRITTEN BY USER</h2>
       <ul>
         {posts.map((post) => {
