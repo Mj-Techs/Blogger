@@ -33,7 +33,7 @@ const UserDetail = (props) => {
         {posts.map((post) => {
           return (
             <li key={post.id}>
-              <Link>{post.title}</Link>
+              <Link to={`/posts/${post.id}`}>{post.title}</Link>
             </li>
           );
         })}

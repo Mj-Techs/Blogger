@@ -57,7 +57,9 @@ const ShowPostInfo = (props) => {
         })}
       </ul>
       <hr />
-      <Link>More posts of author:{userName}</Link>
+      <Link to={`/users/${userPost.userId}`}>
+        More posts of author:{userName}
+      </Link>
     </div>
   );
 };
