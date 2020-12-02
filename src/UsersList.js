@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const UsersList = (props) => {
   const [userList, setUserList] = useState([]);
@@ -20,9 +21,9 @@ const UsersList = (props) => {
       <ul>
         {userList.map((user) => {
           return (
-            <li key={user.id}>
+            <Card key={user.id}>
               <Link to={`/users/${user.id}`}>{user.name}</Link>
-            </li>
+            </Card>
           );
         })}
       </ul>

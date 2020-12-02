@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Card } from "react-bootstrap";
+import "./AllPost.css";
 const AllPost = (props) => {
   const [allPost, setAllPost] = useState([]);
   useEffect(() => {
@@ -15,17 +17,17 @@ const AllPost = (props) => {
       });
   }, []);
   return (
-    <div>
+    <div className="postStyle">
       <h1>Total Posts:{allPost.length}</h1>
-      <ul>
+      <Card>
         {allPost.map((post) => {
           return (
-            <li key={post.id}>
+            <li key={post.id} style={{ listStyle: "none" }}>
               <Link to={`/posts/${post.id}`}>{post.title}</Link>
             </li>
           );
         })}
-      </ul>
+      </Card>
     </div>
   );
 };

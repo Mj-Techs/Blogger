@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const ShowPostInfo = (props) => {
   //   console.log(props);
@@ -43,17 +44,25 @@ const ShowPostInfo = (props) => {
   }, [userPost.userId]);
   return (
     <div>
-      <h1>USER NAME:{userName}</h1>
-      <h1>TITLE:{userPost.title}</h1>
-      <h2>
-        BODY:
+      <Card>
+        <Card.Header style={{ fontSize: "1.5rem" }}>
+          <b>USER NAME:{userName}</b>
+        </Card.Header>
+        <Card.Title style={{ paddingLeft: "15px", fontSize: "1.6rem" }}>
+          <b>TITLE:</b>
+          {userPost.title}
+        </Card.Title>
+      </Card>
+      <Card.Title style={{ paddingLeft: "15px", fontSize: "1.6rem" }}>
+        <b> BODY:</b>
         {userPost.body}
-      </h2>
+      </Card.Title>
+
       <hr />
       <h1>COMMENTS</h1>
       <ul>
         {comment.map((com) => {
-          return <li key={com.id}>{com.body}</li>;
+          return <ol key={com.id}>{com.body}</ol>;
         })}
       </ul>
       <hr />
