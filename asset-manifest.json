@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.js": "/Blogger/static/js/main.808ece5a.chunk.js",
-    "main.js.map": "/Blogger/static/js/main.808ece5a.chunk.js.map",
+    "main.css": "/Blogger/static/css/main.8dc19e95.chunk.css",
+    "main.js": "/Blogger/static/js/main.0970a172.chunk.js",
+    "main.js.map": "/Blogger/static/js/main.0970a172.chunk.js.map",
     "runtime-main.js": "/Blogger/static/js/runtime-main.94c7d97c.js",
     "runtime-main.js.map": "/Blogger/static/js/runtime-main.94c7d97c.js.map",
-    "static/js/2.44160640.chunk.js": "/Blogger/static/js/2.44160640.chunk.js",
-    "static/js/2.44160640.chunk.js.map": "/Blogger/static/js/2.44160640.chunk.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/Blogger/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.f5fbc9f3.chunk.js": "/Blogger/static/js/2.f5fbc9f3.chunk.js",
+    "static/js/2.f5fbc9f3.chunk.js.map": "/Blogger/static/js/2.f5fbc9f3.chunk.js.map",
     "index.html": "/Blogger/index.html",
-    "static/js/2.44160640.chunk.js.LICENSE.txt": "/Blogger/static/js/2.44160640.chunk.js.LICENSE.txt"
+    "static/css/2.1a02f21c.chunk.css.map": "/Blogger/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.8dc19e95.chunk.css.map": "/Blogger/static/css/main.8dc19e95.chunk.css.map",
+    "static/js/2.f5fbc9f3.chunk.js.LICENSE.txt": "/Blogger/static/js/2.f5fbc9f3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.94c7d97c.js",
-    "static/js/2.44160640.chunk.js",
-    "static/js/main.808ece5a.chunk.js"
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.f5fbc9f3.chunk.js",
+    "static/css/main.8dc19e95.chunk.css",
+    "static/js/main.0970a172.chunk.js"
   ]
 }
