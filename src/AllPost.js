@@ -22,12 +22,12 @@ const AllPost = (props) => {
       <Card>
         {allPost.map((post) => {
           return (
-            <Card.Title
+            <Card
               key={post.id}
               style={{ listStyle: "none", paddingLeft: "2rem" }}
             >
               <Link to={`/posts/${post.id}`}>{post.title}</Link>
-            </Card.Title>
+            </Card>
           );
         })}
       </Card>
