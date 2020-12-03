@@ -62,11 +62,18 @@ const ShowPostInfo = (props) => {
       <h1>COMMENTS</h1>
       <ol>
         {comment.map((com) => {
-          return <li key={com.id}>{com.body}</li>;
+          return (
+            <li key={com.id} style={{ fontSize: "1.2rem" }}>
+              {com.body}
+            </li>
+          );
         })}
       </ol>
       <hr />
-      <Link to={`/users/${userPost.userId}`}>
+      <Link
+        to={`/users/${userPost.userId}`}
+        style={{ fontSize: "1.5rem", paddingLeft: "1rem" }}
+      >
         More posts of author:{userName}
       </Link>
     </div>

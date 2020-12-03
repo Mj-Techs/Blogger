@@ -21,7 +21,7 @@ const UsersList = (props) => {
       <ul>
         {userList.map((user) => {
           return (
-            <Card key={user.id}>
+            <Card key={user.id} style={{ fontSize: "1.5rem" }}>
               <Link to={`/users/${user.id}`}>{user.name}</Link>
             </Card>
           );

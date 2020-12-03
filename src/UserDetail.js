@@ -41,7 +41,10 @@ const UserDetail = (props) => {
       <ul>
         {posts.map((post) => {
           return (
-            <Card key={post.id}>
+            <Card
+              key={post.id}
+              style={{ fontSize: "1.5rem", paddingLeft: "1rem" }}
+            >
               <Link to={`/posts/${post.id}`}>{post.title}</Link>
             </Card>
           );
