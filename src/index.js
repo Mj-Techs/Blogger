@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 
 ReactDOM.render(
-  <HashRouter basename="/">
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <App />
   </HashRouter>,
   document.getElementById("root")
