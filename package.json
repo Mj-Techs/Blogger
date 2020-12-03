@@ -1,6 +1,5 @@
 {
   "name": "blogger",
-  "homepage": "https://Mj-Techs.github.io/Blogger",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -23,8 +22,6 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "BROWSER='google-chrome-stable' react-scripts start",
     "build": "npm run build",
     "test": "react-scripts test",
