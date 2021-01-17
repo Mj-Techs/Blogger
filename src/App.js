@@ -8,9 +8,9 @@ import ShowPostInfo from "./ShowPostInfo";
 
 const App = () => {
   return (
-    <div>
-      <Navbar bg="primary" variant="dark">
-        <Nav className="mr-3 justify-content-center">
+    <div className="app">
+      <Navbar className="nav">
+        <Nav className="mr-3 justify-content-center ">
           <Nav.Item>
             <Nav.Link href="/">Home</Nav.Link>
           </Nav.Item>
